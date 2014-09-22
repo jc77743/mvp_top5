@@ -1,19 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @restaurant.name %>
-</p>
+<% @restaurant.dishes.each do |dish| %>
+	<p><%= dish.name %></p>
+<% end %>
 
-<p>
-  <strong>Latitude:</strong>
-  <%= @restaurant.latitude %>
-</p>
 
-<p>
-  <strong>Longitude:</strong>
-  <%= @restaurant.longitude %>
-</p>
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>

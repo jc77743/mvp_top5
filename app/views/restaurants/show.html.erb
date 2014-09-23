@@ -1,28 +1,40 @@
 <p id="notice"><%= notice %></p>
 
-
-
+<div data-role="header">
+  <a href="#" class="ui-btn" data-rel="back">Go Back</a>
+</div>
+<% i = 1 %>
 
 <div class="panel-group" id="accordion">
 	<% @restaurant.dishes.each do |dish| %>
-		<div class="panel panel-default">
+
+      
+		<div class="panel panel-default<%=i%>">
 			<div class="panel-heading">
-			  <h4 class="panel-title">
-			    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+			  <h4 class="panel-title" style="color:white;">
+			    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" style="color:white;">
 			      <%= dish.name %>
 			    </a>
 			  </h4>
 			</div>
 			<div id="collapseOne" class="panel-collapse collapse in">
 			  <div class="panel-body">
-			    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <img src="https://dl.dropboxusercontent.com/u/6939795/top5logo-mini.png">
+
+          <img id="like" src="https://dl.dropboxusercontent.com/u/6939795/top5likeai.png">
+
+          <p id="text"><%= dish.description %><p>
+
+          
+			    <!-- <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p> -->
 			  </div>
 			</div>
 		</div>
+    <% i+=1 %>
 	<% end %>
 </div>
 
-<div class="panel-group" id="accordion">
+<!-- <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -65,8 +77,4 @@
       </div>
     </div>
   </div>
-</div>
-
-
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-<%= link_to 'Back', restaurants_path %>
+</div> -->

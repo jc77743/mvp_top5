@@ -8,6 +8,105 @@
 	}
 }
 
+
+/* jquery */
+
+.ui-mobile .ui-page {
+  background-color: #ff6600;
+}
+
+.toplogo {
+  width: 200px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+  text-shadow: none;
+  color: white;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+  padding-bottom: 43px;
+  margin-top: -21px;
+}
+
+h1, h2, h3, h4, h5 {
+  text-shadow: none;
+}
+
+h4 {
+  color: white;
+}
+
+.ui-page-theme-a a:hover, html .ui-bar-a a:hover, html .ui-body-a a:hover, html body .ui-group-theme-a a:hover {
+  color: white;
+}
+
+.panel-body > img {
+  max-width: 80px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img#like {
+  max-width: 30px;
+  text-align: right;
+  float: right;
+  margin-top: 30px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+p#text{
+  margin-left: 102px;
+  margin-top: -94px;
+}
+
+.panel-group{
+  margin-top: 10px;
+}
+
+.panel-title{
+  margin-top: -10px;
+}
+
+.panel-title {
+  /*height: 100px;*/
+  padding-top: 10px;
+  padding-left: 103px;
+}
+
+.panel-default1{
+  background-color: #fa943b;
+}
+
+.panel-default3 {
+  background-color: #ff6600;
+}
+
+.panel-default2{
+  background-color: #e74112;
+}
+
+.panel-default4{
+  background-color: #ff912a;
+}
+
+.panel-default5{
+  background-color: #f27a3d;
+}
+
+p {
+  text-shadow:none;
+  color: white;
+}
+
+
+
 /* universal */
 
 html {

@@ -1,6 +1,16 @@
-<h1>Listing restaurants</h1>
+<div class="toplogo">
+  <img src="https://dl.dropboxusercontent.com/u/6939795/top5logo.png">
+</div>
 
-<table>
+<ul data-role="listview">
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant %></li>
+  <% end %>
+</ul>
+
+
+
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -22,8 +32,8 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> 
 
 <br>
 
-<%= link_to 'New Restaurant', new_restaurant_path %>
+<%= link_to 'New Restaurant', new_restaurant_path %>-->
